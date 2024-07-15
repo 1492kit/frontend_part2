@@ -1,0 +1,16 @@
+{
+  "name": "frontend_part2",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "frontend course part 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha tests"
+  },
+  "author": "Kirill",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.6.0"
+  }
+}
