@@ -14,7 +14,7 @@ body {
   width: 360px;
 }
 
-.jumbotron, 
+.jumbotron,
 .cta {
   display: flex;
   flex-direction: column;
@@ -131,26 +131,26 @@ button:active {
 
 .post {
   margin: 16px 0;
-  width: 328px;  
+  width: 328px;
 }
 
-.post-header {  
-  padding: 0 0 5px 16px;  
+.post-header {
+  padding: 0 0 5px 16px;
   overflow: hidden;
 }
 
 .avatar {
-  width: 52px; 
-  height: 52px; 
-  border-radius: 50%; 
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
   overflow: hidden;
   float: left;
 }
 
 .avatar img {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .user {
@@ -167,7 +167,7 @@ button:active {
   padding-left: 16px;
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
-  text-align: inherit;  
+  text-align: inherit;
 }
 
 .message img {
@@ -185,7 +185,7 @@ button:active {
   font-weight: bold;
 }
 
-.user-account, 
+.user-account,
 .time,
 .post-stats-item {
   color: #ABACB1;
@@ -198,11 +198,11 @@ button:active {
   width: 52px;
 }
 
-.post-stats {  
+.post-stats {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 5px;    
+  padding-top: 5px;
 }
 
 .post-stats-item {
@@ -210,7 +210,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;  
+  font-size: 14px;
 }
 
 .post-stats-item p {
@@ -230,7 +230,11 @@ button:active {
 
 .modal {
   position: absolute;
+<<<<<<< HEAD
   padding: 20px 20px;
+=======
+  padding: 50px 30px;
+>>>>>>> 803ad43 (Добавил модальные окна регистрации и логина (мобил. версия))
   top: auto;
   bottom: 0;
   left: 0;
@@ -241,8 +245,11 @@ button:active {
   border-top-left-radius: 25px;
   background-color: #fff;
   transition: transform 0.3s;
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
+=======
+>>>>>>> 803ad43 (Добавил модальные окна регистрации и логина (мобил. версия))
 }
 
 .disable-scroll {
@@ -293,15 +300,26 @@ button:active {
   align-self: flex-start;
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-weight: bold;
+<<<<<<< HEAD
   line-height: 28px;  
   margin: 10px;
   padding-top: 20px;
+=======
+  line-height: 28px;
+  padding: 16px;
+>>>>>>> 803ad43 (Добавил модальные окна регистрации и логина (мобил. версия))
 }
 
 .form-row {
   display: flex;
   flex-direction: column-reverse;
+<<<<<<< HEAD
   width: 328px;   
+=======
+  width: 328px;
+  height: 52px;
+  margin-bottom: 20px;
+>>>>>>> 803ad43 (Добавил модальные окна регистрации и логина (мобил. версия))
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-size: 18px;
 }
@@ -309,17 +327,29 @@ button:active {
 input {
   border: 1px solid;
   border-color: #DFDFDF;
+<<<<<<< HEAD
   border-radius: 10px;  
   font-size: 18px;
   outline: none;
   height: 52px;
   margin-bottom: 10px;
+=======
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 32px;
+  font-size: 18px;
+  outline: none;
+>>>>>>> 803ad43 (Добавил модальные окна регистрации и логина (мобил. версия))
 }
 
 label {
   padding-left: 16px;
   color: #bdbdbd;
+<<<<<<< HEAD
   transform: translateY(35px);
+=======
+  transform: translateY(70px);
+>>>>>>> 803ad43 (Добавил модальные окна регистрации и логина (мобил. версия))
   transform-origin: left top;
   cursor: text;
   transition: all 0.3s;
@@ -334,6 +364,7 @@ input:not(:placeholder-shown) {
 
 input:focus~label,
 input:not(:placeholder-shown)~label {
+<<<<<<< HEAD
   transform: translateY(30px) scale(0.5);
 }
 
@@ -345,4 +376,7 @@ input:not(:placeholder-shown)~label {
 
 .button-form {
   margin-top: 20px;
+=======
+  transform: translateY(60px) scale(0.5);
+>>>>>>> 803ad43 (Добавил модальные окна регистрации и логина (мобил. версия))
 }
