@@ -5,13 +5,11 @@
     "extends": "airbnb-base",
     "env": {
         "node": true,
-        "es6": true,
-        "browser": true        
+        "es6": true
     },
     "ignorePatterns": [
         "tests/**",
-        "sandbox/**",
-        "public/scripts/swiped-events.min.js"
+        "sandbox/**"
     ],
     "rules": {
         "import/extensions": [

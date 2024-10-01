@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Home page</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css\style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     <div class="jumbotron">
 
       <div class="logo">
-        <img src="images\Logo.png" alt="Логотип" width="36px">
+        <img src="images\Logo.png" alt="Логотип" weidth="36px">
       </div>
 
       <div class="header">
@@ -260,51 +260,6 @@
     </div>
 
   </div>
-
-  <div class="modals-reg">
-    <div class="modal">
-      <button class="mobile-reg-close" data-swipe-threshold="20" data-swipe-timeout="500"
-        data-swipe-ignore="false"></button>
-      <form id='regForm' action='' method='get' class='form'>
-        <div class="form-header">Регистрация</div>
-        <div class='form-row'>
-          <input id='email-reg' name='email' type='email' placeholder=' ' required />
-          <label for='email-reg'>Электронная почта</label>
-        </div>
-        <div class='form-row'>
-          <input id='password-reg' name='password' type='password' placeholder=' ' required />
-          <label for='password-reg'>Пароль</label>
-        </div>
-        <div class='form-row'>
-          <input id='password-confirm' name='password-confirm' type='password' placeholder=' ' required />
-          <label for='password-confirm'>Потверждение пароля</label>
-        </div>
-        <button type="submit" class="button button-reg">Зарегистрироваться</button>
-      </form>
-    </div>
-  </div>
-  <div class="modals-login">
-    <div class="modal">
-      <button class="mobile-login-close" data-swipe-threshold="20" data-swipe-timeout="500"
-        data-swipe-ignore="false"></button>
-      <form id='loginForm' action='' method='get' class='form'>
-        <div class="form-header">Авторизация</div>
-        <div class='form-row'>
-          <input id='email-login' name='email' type='email' placeholder=' ' required />
-          <label for='email-login'>Адрес электронной почты</label>
-        </div>
-        <div class='form-row'>
-          <input id='password-login' name='password' type='password' placeholder=' ' required />
-          <label for='password-login'>Пароль</label>
-        </div>
-        <button type="submit" class="button button-login">Войти</button>
-      </form>
-    </div>
-  </div>
-
-  <script src="scripts/swiped-events.min.js"></script>
-  <script src="scripts/regform.js"></script>
-  <script src="scripts/loginform.js"></script>
 
 </body>
 
