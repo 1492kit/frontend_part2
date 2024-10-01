@@ -14,7 +14,7 @@ body {
   width: 360px;
 }
 
-.jumbotron,
+.jumbotron, 
 .cta {
   display: flex;
   flex-direction: column;
@@ -131,26 +131,26 @@ button:active {
 
 .post {
   margin: 16px 0;
-  width: 328px;
+  width: 328px;  
 }
 
-.post-header {
-  padding: 0 0 5px 16px;
+.post-header {  
+  padding: 0 0 5px 16px;  
   overflow: hidden;
 }
 
 .avatar {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
+  width: 52px; 
+  height: 52px; 
+  border-radius: 50%; 
   overflow: hidden;
   float: left;
 }
 
 .avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
 }
 
 .user {
@@ -167,7 +167,7 @@ button:active {
   padding-left: 16px;
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
-  text-align: inherit;
+  text-align: inherit;  
 }
 
 .message img {
@@ -185,7 +185,7 @@ button:active {
   font-weight: bold;
 }
 
-.user-account,
+.user-account, 
 .time,
 .post-stats-item {
   color: #ABACB1;
@@ -198,11 +198,11 @@ button:active {
   width: 52px;
 }
 
-.post-stats {
+.post-stats {  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 5px;
+  padding-top: 5px;    
 }
 
 .post-stats-item {
@@ -210,7 +210,7 @@ button:active {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
+  font-size: 14px;  
 }
 
 .post-stats-item p {
