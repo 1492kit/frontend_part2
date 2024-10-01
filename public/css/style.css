@@ -230,7 +230,7 @@ button:active {
 
 .modal {
   position: absolute;
-  padding: 50px 30px;
+  padding: 20px 20px;
   top: auto;
   bottom: 0;
   left: 0;
@@ -241,6 +241,8 @@ button:active {
   border-top-left-radius: 25px;
   background-color: #fff;
   transition: transform 0.3s;
+  display: flex;
+  justify-content: center;
 }
 
 .disable-scroll {
@@ -291,16 +293,15 @@ button:active {
   align-self: flex-start;
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-weight: bold;
-  line-height: 28px;
-  padding: 16px;
+  line-height: 28px;  
+  margin: 10px;
+  padding-top: 20px;
 }
 
 .form-row {
   display: flex;
   flex-direction: column-reverse;
-  width: 328px;
-  height: 52px;
-  margin-bottom: 20px;
+  width: 328px;   
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-size: 18px;
 }
@@ -308,17 +309,17 @@ button:active {
 input {
   border: 1px solid;
   border-color: #DFDFDF;
-  border-radius: 10px;
-  padding: 16px;
-  margin-top: 32px;
+  border-radius: 10px;  
   font-size: 18px;
   outline: none;
+  height: 52px;
+  margin-bottom: 10px;
 }
 
 label {
   padding-left: 16px;
   color: #bdbdbd;
-  transform: translateY(70px);
+  transform: translateY(35px);
   transform-origin: left top;
   cursor: text;
   transition: all 0.3s;
@@ -333,5 +334,15 @@ input:not(:placeholder-shown) {
 
 input:focus~label,
 input:not(:placeholder-shown)~label {
-  transform: translateY(60px) scale(0.5);
+  transform: translateY(30px) scale(0.5);
+}
+
+.input-error {  
+  color: red; 
+  font-size: 12px;
+  padding-left: 20px;     
+}
+
+.button-form {
+  margin-top: 20px;
 }
