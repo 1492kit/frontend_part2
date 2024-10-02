@@ -230,11 +230,7 @@ button:active {
 
 .modal {
   position: absolute;
-<<<<<<< HEAD
   padding: 20px 20px;
-=======
-  padding: 50px 30px;
->>>>>>> 803ad43 (Добавил модальные окна регистрации и логина (мобил. версия))
   top: auto;
   bottom: 0;
   left: 0;
@@ -245,11 +241,8 @@ button:active {
   border-top-left-radius: 25px;
   background-color: #fff;
   transition: transform 0.3s;
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
-=======
->>>>>>> 803ad43 (Добавил модальные окна регистрации и логина (мобил. версия))
 }
 
 .disable-scroll {
@@ -300,26 +293,15 @@ button:active {
   align-self: flex-start;
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-weight: bold;
-<<<<<<< HEAD
   line-height: 28px;  
   margin: 10px;
   padding-top: 20px;
-=======
-  line-height: 28px;
-  padding: 16px;
->>>>>>> 803ad43 (Добавил модальные окна регистрации и логина (мобил. версия))
 }
 
 .form-row {
   display: flex;
   flex-direction: column-reverse;
-<<<<<<< HEAD
   width: 328px;   
-=======
-  width: 328px;
-  height: 52px;
-  margin-bottom: 20px;
->>>>>>> 803ad43 (Добавил модальные окна регистрации и логина (мобил. версия))
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-size: 18px;
 }
@@ -327,29 +309,17 @@ button:active {
 input {
   border: 1px solid;
   border-color: #DFDFDF;
-<<<<<<< HEAD
   border-radius: 10px;  
   font-size: 18px;
   outline: none;
   height: 52px;
   margin-bottom: 10px;
-=======
-  border-radius: 10px;
-  padding: 16px;
-  margin-top: 32px;
-  font-size: 18px;
-  outline: none;
->>>>>>> 803ad43 (Добавил модальные окна регистрации и логина (мобил. версия))
 }
 
 label {
   padding-left: 16px;
   color: #bdbdbd;
-<<<<<<< HEAD
   transform: translateY(35px);
-=======
-  transform: translateY(70px);
->>>>>>> 803ad43 (Добавил модальные окна регистрации и логина (мобил. версия))
   transform-origin: left top;
   cursor: text;
   transition: all 0.3s;
@@ -364,7 +334,6 @@ input:not(:placeholder-shown) {
 
 input:focus~label,
 input:not(:placeholder-shown)~label {
-<<<<<<< HEAD
   transform: translateY(30px) scale(0.5);
 }
 
@@ -376,7 +345,4 @@ input:not(:placeholder-shown)~label {
 
 .button-form {
   margin-top: 20px;
-=======
-  transform: translateY(60px) scale(0.5);
->>>>>>> 803ad43 (Добавил модальные окна регистрации и логина (мобил. версия))
 }
