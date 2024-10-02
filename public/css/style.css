@@ -216,3 +216,133 @@ button:active {
 .post-stats-item p {
   padding-left: 12px;
 }
+
+.modals-reg,
+.modals-login {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  padding: 20px 20px;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  transform: none;
+  transform: translateY(150vh);
+  width: 100%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  background-color: #fff;
+  transition: transform 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+.visible {
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+
+.mobile-login-close,
+.mobile-reg-close {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  display: block;
+  background-color: transparent;
+  border: none;
+}
+
+.mobile-login-close::before, 
+.mobile-reg-close::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 2px;
+  background-color: #bfbfbf;
+}
+
+.is-open {
+  display: block;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-header {
+  font-size: 24px;
+  align-self: flex-start;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  line-height: 28px;  
+  margin: 10px;
+  padding-top: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 328px;   
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+}
+
+input {
+  border: 1px solid;
+  border-color: #DFDFDF;
+  border-radius: 10px;  
+  font-size: 18px;
+  outline: none;
+  height: 52px;
+  margin-bottom: 10px;
+}
+
+label {
+  padding-left: 16px;
+  color: #bdbdbd;
+  transform: translateY(35px);
+  transform-origin: left top;
+  cursor: text;
+  transition: all 0.3s;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+  color: #555555;
+  padding-top: 23px;
+  padding-left: 16px;
+}
+
+input:focus~label,
+input:not(:placeholder-shown)~label {
+  transform: translateY(30px) scale(0.5);
+}
+
+.input-error {  
+  color: red; 
+  font-size: 12px;
+  padding-left: 20px;     
+}
+
+.button-form {
+  margin-top: 20px;
+}

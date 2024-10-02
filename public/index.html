@@ -261,6 +261,54 @@
 
   </div>
 
+  <div class="modals-reg">
+    <div class="modal">
+      <button class="mobile-reg-close" data-swipe-threshold="20" data-swipe-timeout="500"
+        data-swipe-ignore="false"></button>
+      <form id='regForm' action='' method='get' class='form' novalidate >
+        <div class="form-header">Регистрация</div>
+        <div class='form-row'>
+          <input id='email-reg' name='email' type='email' placeholder=' ' required />          
+          <label for='email-reg'>Электронная почта</label>                   
+        </div>
+        <p class="input-error" id="errorEmail"></p>
+        <div class='form-row'>
+          <input id='password-reg' name='password' type='password' placeholder=' ' required />
+          <label for='password-reg'>Пароль</label>
+        </div>
+        <p class="input-error" id="errorRegPass"></p>        
+        <div class='form-row'>
+          <input id='password-confirm' name='password-confirm' type='password' placeholder=' ' required />
+          <label for='password-confirm'>Потверждение пароля</label>
+        </div>
+        <p class="input-error" id="errorConPass"></p>        
+        <button type="submit" class="button button-reg button-form">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+  <div class="modals-login">
+    <div class="modal">
+      <button class="mobile-login-close" data-swipe-threshold="20" data-swipe-timeout="500"
+        data-swipe-ignore="false"></button>
+      <form id='loginForm' action='' method='get' class='form'>
+        <div class="form-header">Авторизация</div>
+        <div class='form-row'>
+          <input id='email-login' name='email' type='email' placeholder=' ' required />
+          <label for='email-login'>Адрес электронной почты</label>
+        </div>
+        <div class='form-row'>
+          <input id='password-login' name='password' type='password' placeholder=' ' required />
+          <label for='password-login'>Пароль</label>
+        </div>
+        <button type="submit" class="button button-login">Войти</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="scripts/swiped-events.min.js"></script>
+  <script src="scripts/regform.js"></script>
+  <script src="scripts/loginform.js"></script>
+  <script type="module" src="scripts/validateform.js"></script>
 </body>
 
 </html>
