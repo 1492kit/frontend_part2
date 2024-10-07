@@ -346,3 +346,7 @@ input:not(:placeholder-shown)~label {
 .button-form {
   margin-top: 20px;
 }
+
+.is-hidden {
+  display: none;
+}

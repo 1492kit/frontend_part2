@@ -35,26 +35,26 @@
 
     </div>
 
-    <div class="statistics">
+    <div class="statistics is-hidden">
 
       <div class="statistic-item">
-        <p class="numbers">20</p>
-        <p class="caption">Пользователей зарегистрировано</p>
+        <p id="users" class="numbers"></p>
+        <p id="usersRegTitle" class="caption"></p>
       </div>
 
       <div class="statistic-item">
-        <p class="numbers">556</p>
-        <p class="caption">Сообщений<br>написано</p>
+        <p id="writMessages" class="numbers"></p>
+        <p id="writMessagesTitle" class="caption"></p>
       </div>
 
       <div class="statistic-item">
-        <p class="numbers">58</p>
-        <p class="caption">Написано<br>сегодня</p>
+        <p id="writToday" class="numbers"></p>
+        <p  id="writTodayTitle" class="caption"></p>
       </div>
 
     </div>
 
-    <div class="messages-list">
+    <div class="messages-list is-hidden">
 
       <div class="header-feed">
         <p>Последние сообщения</p>
@@ -62,7 +62,7 @@
 
       <ul class="feed">
 
-        <li class="post-border">
+        <!-- <li class="post-border">
           <div class="post">
 
             <div class="avatar">
@@ -102,9 +102,9 @@
             </div>
 
           </div>
-        </li>
+        </li> -->
 
-        <li class="post-border">
+        <!-- <li class="post-border">
           <div class="post">
 
             <div class="avatar">
@@ -237,7 +237,7 @@
 
           </div>
 
-        </li>
+        </li> -->
 
       </ul>
     </div>
@@ -308,6 +308,7 @@
   <script src="scripts/swiped-events.min.js"></script>
   <script src="scripts/regform.js"></script>
   <script src="scripts/loginform.js"></script>
+  <script type="module" src="scripts/api.js"></script>
   <script type="module" src="scripts/validateform.js"></script>
 </body>
 
