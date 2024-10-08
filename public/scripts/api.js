@@ -103,7 +103,7 @@ async function apiData() {
   avatars.forEach((avatar) => {
     const img = avatar.querySelector('img');
     pictures.pictures.forEach((picture) => {
-      if (avatar.id === picture.user_id) {
+      if (avatar.id === `id${picture.user_id}`) {
         img.setAttribute('src', picture.url);
       }
     });
