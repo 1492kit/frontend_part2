@@ -30,11 +30,13 @@ async function apiData() {
   const urlMess = 'https://burtovoy.github.io/messages.json';
   const responseMess = await fetch(urlMess);
   const messages = await responseMess.json();
-  const messagesDiv = document.querySelector('.messages-list');
   const feedUl = document.querySelector('.feed');
+  const feedFrames = document.querySelectorAll('.post-border-frame');
 
   if (messages) {
-    messagesDiv.classList.remove('is-hidden');
+    feedFrames.forEach((feedFrame) => {
+      feedFrame.setAttribute('style', 'display: none;');
+    });
     messages.messages.forEach((message) => {
       const listItem = document.createElement('li');
       listItem.classList.add('post-border');
