@@ -1,3 +1,5 @@
+import convertTime from '../assets/converttime.js';
+
 async function apiData() {
   const urlStat = 'https://burtovoy.github.io/statistic.json';
   const responseStat = await fetch(urlStat);
@@ -38,13 +40,21 @@ async function apiData() {
       feedFrame.setAttribute('style', 'display: none;');
     });
     messages.messages.forEach((message) => {
+      const postDate = (() => {
+        const [datePart, timePart] = message.date.split(' ');
+        const [day, month, year] = datePart.split('.').map(Number);
+        const [hours, minutes] = timePart.split(':').map(Number);
+        return new Date(Date.UTC(year, month - 1, day, hours, minutes, 0));
+      })();
+      const currentDate = new Date();
+      const convertedTime = convertTime(postDate, currentDate);
       const listItem = document.createElement('li');
       listItem.classList.add('post-border');
 
       listItem.innerHTML = `
     <li class="post-border">
-    <div class="post" id="${message.id}">
-      <div class="avatar" id="${message.user_id}">
+    <div class="post" id="id${message.id}">
+      <div class="avatar" id="id${message.user_id}">
         <img src="" alt="Аватар">
       </div>
 
@@ -55,7 +65,7 @@ async function apiData() {
         </div>
 
         <div class="time">
-          <p>${message.date}</p>
+          <p>${convertedTime}</p>
         </div>
       </div>
 
